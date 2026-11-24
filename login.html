@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - SIM Peminjaman Ruang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><h1>SIM Peminjaman Ruang Kampus</h1></header>
+  <main>
+    <div class="card" style="max-width:380px;margin:0 auto;">
+      <h2>Masuk</h2>
+      <form id="formLogin">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="admin" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="admin123" required>
+        <p class="error" id="pesanError"></p>
+        <button type="submit">Masuk</button>
+      </form>
+    </div>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>

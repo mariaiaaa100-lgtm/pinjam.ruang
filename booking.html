@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Peminjaman Ruang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><h1>SIM Peminjaman Ruang Kampus</h1></header>
+  <main>
+    <div class="card">
+      <h2>Form Peminjaman Ruang</h2>
+      <form id="formBooking">
+        <label for="nama">Nama peminjam</label>
+        <input type="text" id="nama" required>
+
+        <label for="ruang">Ruang</label>
+        <select id="ruang" required>
+          <option value="">Pilih ruang</option>
+          <option>Ruang A101</option>
+          <option>Ruang A102</option>
+          <option>Aula Utama</option>
+          <option>Lab Komputer 1</option>
+        </select>
+
+        <label for="tanggal">Tanggal</label>
+        <input type="date" id="tanggal" required>
+
+        <label for="mulai">Jam mulai</label>
+        <input type="time" id="mulai" required>
+
+        <label for="selesai">Jam selesai</label>
+        <input type="time" id="selesai" required>
+
+        <p class="error" id="pesanError"></p>
+        <button type="submit">Ajukan peminjaman</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Daftar Peminjaman</h2>
+      <table>
+        <thead>
+          <tr><th>Nama</th><th>Ruang</th><th>Tanggal</th><th>Waktu</th></tr>
+        </thead>
+        <tbody id="daftarBooking"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/booking.js"></script>
+</body>
+</html>
